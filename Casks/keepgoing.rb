@@ -9,5 +9,10 @@ cask "keepgoing" do
 
   app "KeepGoing.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/KeepGoing.app"]
+  end
+
   zap trash: "~/.keepgoing/tray-config.json"
 end

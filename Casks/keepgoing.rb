@@ -1,6 +1,6 @@
 cask "keepgoing" do
-  version "1.5.3"
-  sha256 "867f2274a2f3c7a410502970251456f183090a393e6b1fb5e935398575cc7ed2"
+  version "1.6.0"
+  sha256 "4a932543ff31267939ef80f5b299a9b74ddf1f0be2cb765731fc0e3e06e5a0ee"
 
   url "https://github.com/keepgoing-dev/releases/releases/download/desktop-tray-v#{version}/KeepGoing-#{version}.dmg"
   name "KeepGoing"

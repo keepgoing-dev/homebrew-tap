@@ -1,8 +1,8 @@
 cask "keepgoing" do
-  version "1.13.1"
-  sha256 "8058ead07b07e044bff54aad7911794a4e49274f28c59b7dbeb938bc999dde60"
+  version "1.13.2"
+  sha256 "fad9b9a9a5e8c2d9607790d7acbd95da8ef513903cb5e9b8d7facd76a9bbd9aa"
 
-  url "https://github.com/keepgoing-dev/releases/releases/download/desktop-tray-v#{version}/KeepGoing-#{version}.dmg"
+  url "https://github.com/keepgoing-dev/releases/releases/download/desktop-tray-v#{version}/KeepGoing-#{version}.zip"
   name "KeepGoing"
   desc "System tray companion for KeepGoing.dev"
   homepage "https://keepgoing.dev"
@@ -14,5 +14,8 @@ cask "keepgoing" do
                    args: ["-cr", "#{appdir}/KeepGoing.app"]
   end
 
-  zap trash: "~/.keepgoing/tray-config.json"
+  zap trash: [
+    "~/.keepgoing/tray-config.json",
+    "~/.keepgoing/keepgoing-global.db",
+  ]
 end

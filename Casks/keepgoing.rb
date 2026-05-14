@@ -1,6 +1,6 @@
 cask "keepgoing" do
-  version "1.13.4"
-  sha256 "3d0da5611c140259aee903622e33266bc83219dcabeba0ba8a8b091342d782cd"
+  version "1.14.0"
+  sha256 "adcc024f02489e5948f1c54b7c0b5a4206070d210b0437fc7e8d29b67bc3f637"
 
   url "https://keepgoing.dev/dl/mac-zip?v=#{version}"
   name "KeepGoing"

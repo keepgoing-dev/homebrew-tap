@@ -1,27 +1,31 @@
 # Homebrew Tap for KeepGoing.dev
 
-Homebrew formulae for [KeepGoing](https://keepgoing.dev) desktop applications.
+Homebrew casks for [KeepGoing](https://keepgoing.dev) Mac apps.
 
-## Install
+## Install KeepGoing Den
 
 ```bash
 brew tap keepgoing-dev/tap
-brew install --cask keepgoing
+brew install --cask keepgoing-den
 ```
 
-## Update
+The Den updates itself, so `brew upgrade` leaves it alone. To uninstall, turn off the Claude Code
+statusline in the Den first if you turned it on, and deactivate this Mac in Settings if you have a
+licence.
 
 ```bash
-brew upgrade --cask keepgoing
+brew uninstall --cask keepgoing-den
 ```
 
-## Available Casks
+## Available casks
 
 | Cask | Description |
 |------|-------------|
-| `keepgoing` | macOS menubar companion that shows re-entry briefings for all your projects |
+| `keepgoing-den` | Menu bar Pomodoro timer that binds each project to its own desktop |
+| `keepgoing` | Deprecated. The old system tray companion, replaced by KeepGoing Den |
+
+If you still have the old tray app, remove it with `brew uninstall --cask keepgoing`.
 
 ## Learn more
 
-- [KeepGoing.dev](https://keepgoing.dev)
-- [Desktop Tray setup guide](https://keepgoing.dev/setup/desktop-tray)
+- [KeepGoing Den](https://keepgoing.dev/den)

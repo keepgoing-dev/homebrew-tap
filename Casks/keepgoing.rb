@@ -7,6 +7,8 @@ cask "keepgoing" do
   desc "System tray companion for KeepGoing.dev"
   homepage "https://keepgoing.dev"
 
+  deprecate! date: "2026-10-24", because: "is discontinued, use keepgoing-den"
+
   app "KeepGoing.app"
 
   postflight do

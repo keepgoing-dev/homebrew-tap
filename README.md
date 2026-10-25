@@ -5,9 +5,11 @@ Homebrew casks for [KeepGoing](https://keepgoing.dev) Mac apps.
 ## Install KeepGoing Den
 
 ```bash
-brew tap keepgoing-dev/tap
-brew install --cask keepgoing-den
+brew install --cask keepgoing-dev/tap/keepgoing-den
 ```
+
+Use the full name: Homebrew only loads casks from taps you trust, and installing by full name
+trusts this one cask.
 
 The Den updates itself, so `brew upgrade` leaves it alone. To uninstall, turn off the Claude Code
 statusline in the Den first if you turned it on, and deactivate this Mac in Settings if you have a

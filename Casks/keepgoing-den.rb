@@ -1,6 +1,6 @@
 cask "keepgoing-den" do
-  version "0.3.1"
-  sha256 "28f7551b19373e76f94ab724dea4b13c096dabe1a15ad5b9c9bccc3e4342efea"
+  version "0.4.0"
+  sha256 "cf1985f09baed88e4461bc9a9ec62ec9fb29454bd2006d17e062a2d49ff4210d"
 
   url "https://github.com/keepgoing-dev/keepgoing-hub-releases/releases/download/v#{version}/KeepGoing-Den-#{version}.dmg"
   name "KeepGoing Den"
